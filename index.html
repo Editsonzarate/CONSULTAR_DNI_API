@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de DNI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<meta name="author" content="ING.EDITSON OSWALDO ZARATE AGURTO" />
+    <meta name="copyright" content="ING.EDITSON OSWALDO ZARATE AGURTO" />
+    <meta http-equiv="cache-control" content="no-cache" />
+	<link rel="stylesheet" href="css/style.css">
+	
+</head>
+<body>
+    <div class="form-container">
+        <h2>Consulta de DNI Perú</h2>
+        <form id="dni-form">
+            <div class="form-group">
+                <label for="dni">DNI</label>
+                <input type="number" id="dni" name="dni" autocomplete="off" maxlength="8" step="1" oninput="this.value = this.value.slice(0,8);">
+            </div>
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="nombre" name="nombre" id="nombre" disabled>
+            </div>
+            <div class="form-group">
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido"  disabled>
+            </div>
+            <div class="form-group">
+                <label for="cui"> Código</label>
+                <input type="number" name="cui" id="cui" disabled>
+            </div>
+            <button type="submit" class="btn-submit">Consultar</button>
+        </form>
+    </div>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
